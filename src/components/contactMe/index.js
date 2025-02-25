@@ -79,7 +79,7 @@ const ContactMe = () => {
                             Contact Me
                         </p>
                         <p className="text-[#b2b3b3] font-poppins text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, atque.
+                        Feel free to reach out for collaborations, project inquiries, or just to connect. I'm always open to discussing new opportunities and ideas.
                         </p>
                     </div>
                     <form
