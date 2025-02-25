@@ -16,11 +16,13 @@ export default async function handler(req, res) {
             });
 
             const mailOptions = {
-                from: process.env.EMAIL_SENDER,
+                from: process.env.EMAIL_USER, // Use your verified email
                 to: process.env.EMAIL_RECEIVER,
                 subject: `New Contact Form Submission from ${firstName} ${lastName}`,
                 text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
+                replyTo: email, // This allows the recipient to reply directly to the sender
             };
+
 
             await transporter.sendMail(mailOptions);
 

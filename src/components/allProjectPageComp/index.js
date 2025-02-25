@@ -28,6 +28,7 @@ const AllProjectPageComp = () => {
                     </div>
                 </div>
             </Fade>
+           
         </div>
     );
 };

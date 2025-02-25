@@ -10,20 +10,20 @@ const SpecificProjectPage = ({ project }) => {
     return (
         <>
             <div className='flex items-center justify-center w-full py-20'>
-                <div className='max-w-[1300px] flex flex-col justify-center  gap-y-20 w-full'>
-                    <div className='flex items-start justify-center gap-x-8'>
-                        <div className='flex flex-col gap-y-8 w-[50%] h-full'>
+                <div className='max-w-[1300px] flex flex-col justify-center  gap-y-20 w-full px-8'>
+                    <div className='flex lg:flex-row items-start justify-center flex-col gap-x-8 gap-y-8 lg:gap-y-0'>
+                        <div className='flex flex-col gap-y-8 w-full lg:w-[50%] h-full'>
                             <h2 className='text-5xl font-bold text-white'>
                                 {project.projectTitle}
                             </h2>
                             <p className='text-[#b2b3b3]'>
-                                {project?.projectTitle}
+                                {project?.projectCategory}
                             </p>
-                            <Link href={`/${project.link}`}>
-                                <p className='text-white underline'>
+                            {project?.projectLink && <Link href={project.projectLink} legacyBehavior>
+                                <a target="_blank" rel="noopener noreferrer" className="text-white underline">
                                     {project?.projectLink}
-                                </p>
-                            </Link>
+                                </a>
+                            </Link>}
                             <div className='flex flex-col gap-y-8'>
                                 <h2 className='text-xl font-semibold text-white'>
                                     Technology Stack
@@ -43,7 +43,7 @@ const SpecificProjectPage = ({ project }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-[50%]'>
+                        <div className='w-full lg:w-[50%]'>
                             <Image
                                 src={project?.projectImg || defaultImg}
                                 height={500}
@@ -52,11 +52,10 @@ const SpecificProjectPage = ({ project }) => {
                                 className='!w-full !h-auto rounded-xl hover:scale-105 transition-all ease-linear duration-300' />
                         </div>
                     </div>
-                    <div>
-                        <p className='text-white'>
-                            {project?.desc}
-                        </p>
-                    </div>
+                    <div
+                        className="leading-loose space-y-10 text-white"
+                        dangerouslySetInnerHTML={{ __html: project?.projectDesc }}
+                    />
                 </div>
             </div>
 

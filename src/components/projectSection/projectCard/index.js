@@ -21,14 +21,14 @@ const ProjectCard = ({ data }) => {
 
                 <div className="flex flex-col gap-y-4">
                     <p className="text-2xl font-poppins text-[#B2B3B3]">
-                        {data.projectTitle}
+                        {data?.projectTitle}
                     </p>
                     <p className="font-poppins text-[#B2B3B3]">
-                        {data.projectDesc}
+                        {data?.desc}
                     </p>
                 </div>
                 <div>
-                    <Link href={`/project${data.url}`}>
+                    <Link href={`/project${data?.url}`}>
                         <button className="flex items-center justify-center text-[#B2B3B3] font-poppins gap-x-2 hover:underline">
                             View Project
                             <Icon icon={"ph:arrow-up-right-light"} height={20} width={20} />

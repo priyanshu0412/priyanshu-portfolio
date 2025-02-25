@@ -5,9 +5,13 @@ const contactSchema = yup.object().shape({
     lastName: yup.string().required("Last name is required"),
     email: yup.string().email("Invalid email").required("Email is required"),
     phone: yup
-        .number()
-        .typeError("Phone must be a number")
-        .integer("Phone must be an integer")
+        .string()
+        .matches(
+            /^(\+?[0-9]{1,3})?[-. (]*[0-9]{3,4}[-. )]*[0-9]{3,4}[-. ]*[0-9]{3,4}$/,
+            "Enter a valid phone number"
+        )
+        .min(4, "Phone must be at least 4 digits") // Internal extensions ke liye
+        .max(20, "Phone must not exceed 20 characters") // International numbers ke liye
         .required("Phone is required"),
     message: yup.string().required("Message is required"),
 });

@@ -29,12 +29,12 @@ const HeroSection = () => {
                         <a
                             href='/PriyanshuResume.pdf'
                             download='/PriyanshuResume.pdf'
-                            className='w-fit text-[#000] bg-[#b2b3b3] px-4 py-3 lg:px-6 lg:py-3 rounded-full hover:bg-[#ffffffc0]'
+                            className='w-fit text-[#000] bg-[#b2b3b3] p-3 lg:px-6 lg:py-3 rounded-full hover:bg-[#ffffffc0]'
                         >
                             Download Resume
                         </a>
                         <Link className='w-fit' href={'/contact'}>
-                            <button className='border-2 hover:text-white hover:border-white border-[#b2b3b3] text-[#b2b3b3] py-3 px-4 lg:px-6 lg:py-3 rounded-full'>
+                            <button className='border-2 hover:text-white hover:border-white border-[#b2b3b3] text-[#b2b3b3] p-3 lg:px-6 lg:py-3 rounded-full'>
                                 Contact
                             </button>
                         </Link>

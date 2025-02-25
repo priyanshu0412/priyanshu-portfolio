@@ -8,12 +8,11 @@ import SkillsWorkSection from './skillsWorkSection'
 // --------------------------------------------
 
 const SkillsSection = () => {
-    const [tabName, setTabName] = useState("FrontEnd")
+    const [tabName, setTabName] = useState("Frontend")
     const [technologyWork, setTechnologyWork] = useState(SkillsSectionData)
     const [mainTechData, setMainTechData] = useState([])
 
     useEffect(() => {
-
         const initialTab = SkillsSectionData.find(ele => ele.name === tabName)
         setMainTechData(initialTab?.data || [])
     }, [tabName])
