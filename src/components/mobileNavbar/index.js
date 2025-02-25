@@ -56,7 +56,7 @@ const MobileNavbar = () => {
                             <Link
                                 key={index}
                                 className='w-fit'
-                                href={ele.name === 'Home' || ele.name === 'Portfolio' ? '/' : `/#${ele.name.toLowerCase()}`}
+                                href={ele.name === 'Home' ? '/' : `/#${ele.name}`}
                                 onClick={handleLinkClick}>
                                 <p className='text-lg text-[#d9d9d9] font-semibold font-poppins cursor-pointer'>
                                     {ele.name}
