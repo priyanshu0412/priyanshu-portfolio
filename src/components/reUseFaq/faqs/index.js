@@ -12,10 +12,12 @@ const FAQs = ({ data, index, isOpen, onToggle }) => {
                 <span className="text-white text-xl">{isOpen ? "−" : "+"}</span>
             </div>
             {isOpen && (
-                <p className="mt-3 text-gray-300 text-sm transition-opacity duration-300 ease-in-out opacity-100">
-                    {data.answer}
-                </p>
+                <p
+                    className="font-medium pt-4 w-full text-white text-sm transition-opacity duration-300 ease-in-out opacity-100"
+                    dangerouslySetInnerHTML={{ __html: data.answer }}
+                />
             )}
+
         </div>
     );
 };

@@ -258,10 +258,10 @@ export const ProjectData = [
         projectTitle: "Mindtrack",
         projectCategory: "Productivity & Personal Management Tool",
         projectDesc: `<div>
-    <h1>Mindtrack – The Ultimate Productivity & Journaling App</h1>
-    <p>Mindtrack is a powerful <strong>productivity and organization tool</strong> designed to seamlessly combine <strong>task management and journaling</strong> in one platform. Unlike traditional to-do list apps, Mindtrack helps users not only manage their daily tasks but also reflect on their thoughts, ideas, and progress.</p>
-    <p>The app allows users to <strong>create, organize, and prioritize tasks</strong> with deadlines and reminders. Alongside task management, Mindtrack includes a <strong>built-in digital journal</strong> for daily reflections and insights.</p>
-    <p>Built with <strong>Next.js, React, and Tailwind CSS</strong>, Mindtrack offers a <strong>fast and responsive UI</strong>. With <strong>cloud synchronization</strong>, users can securely access their data from any device.</p>
+    <h1 style="font-size:2rem; font-weight: bold;">Mindtrack – The Ultimate Productivity & Journaling App</h1>
+    <p style="margin-bottom: 1rem">Mindtrack is a powerful <strong>productivity and organization tool</strong> designed to seamlessly combine <strong>task management and journaling</strong> in one platform. Unlike traditional to-do list apps, Mindtrack helps users not only manage their daily tasks but also reflect on their thoughts, ideas, and progress.</p>
+    <p style="margin-bottom: 1rem">The app allows users to <strong>create, organize, and prioritize tasks</strong> with deadlines and reminders. Alongside task management, Mindtrack includes a <strong>built-in digital journal</strong> for daily reflections and insights.</p>
+    <p style="margin-bottom: 1rem">Built with <strong>Next.js, React, and Tailwind CSS</strong>, Mindtrack offers a <strong>fast and responsive UI</strong>. With <strong>cloud synchronization</strong>, users can securely access their data from any device.</p>
     <p>By integrating structured task management with journaling, Mindtrack provides a <strong>holistic approach</strong> to productivity and mindfulness. 🚀</p>
 </div>`,
         projectLink: "",
@@ -354,7 +354,10 @@ export const faqData = [
     },
     {
         question: "How do I get in touch with you?",
-        answer: "You can reach out through the 'Contact Me' page on my website, or connect with me directly via email at [your-email@example.com](mailto:your-email@example.com).",
+        answer: `<p>You can reach out through the <a href="/contact" style="text-decoration  : underline">Contact Me</a> page on my website, 
+                or connect with me directly via email at 
+                <a href="mailto:dev.professional0506@gmail.com">dev.professional0506@gmail.com</a>.
+            </p>`,
     },
     {
         question: "Do you offer freelance services?",
@@ -366,7 +369,7 @@ export const faqData = [
     },
     {
         question: "Can I see examples of your previous work?",
-        answer: "Yes, you can explore my projects on the 'Projects' page to see examples of the work I have done in web development.",
+        answer: `Yes, you can explore my projects on the  <a href="/all-projects" style="text-decoration  : underline">Projects</a> page to see examples of the work I have done in web development.`,
     },
     {
         question: "Are you open to collaboration?",
@@ -378,7 +381,7 @@ export const faqData = [
     },
     {
         question: "What is the best way to hire you for a project?",
-        answer: "You can contact me through the 'Contact Me' page or via email to discuss your project. After discussing the requirements, we'll finalize the details and begin working together.",
+        answer: `You can contact me through the <a href="/contact" style="text-decoration  : underline">Contact Me</a> page or via email to discuss your project. After discussing the requirements, we'll finalize the details and begin working together.`,
     },
 ];
 
