@@ -13,7 +13,7 @@ const contactSchema = yup.object().shape({
         .min(4, "Phone must be at least 4 digits") // Internal extensions ke liye
         .max(20, "Phone must not exceed 20 characters") // International numbers ke liye
         .required("Phone is required"),
-    message: yup.string().required("Message is required"),
+    message: yup.string(),
 });
 
 export default contactSchema;

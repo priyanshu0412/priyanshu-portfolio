@@ -38,7 +38,7 @@ const ContactMe = () => {
             if (response.ok) {
                 Swal.fire({
                     title: "Email Sent Successfully!",
-                    text: "We will reach out to you very soon.",
+                    text: "will reach out to you very soon.",
                     icon: "success",
                     confirmButtonText: "OK",
                 });
@@ -79,7 +79,7 @@ const ContactMe = () => {
                             Contact Me
                         </p>
                         <p className="text-[#b2b3b3] font-poppins text-justify">
-                        Feel free to reach out for collaborations, project inquiries, or just to connect. I'm always open to discussing new opportunities and ideas.
+                        Feel free to reach out for collaborations, project inquiries, or just to connect. I&apos;m always open to discussing new opportunities and ideas.
                         </p>
                     </div>
                     <form

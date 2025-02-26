@@ -77,10 +77,6 @@ export const SkillsSectionData = [
                 iconName: "devicon:mongodb",
             },
             {
-                skillName: "Postgre",
-                iconName: "devicon:postgresql",
-            },
-            {
                 skillName: "Strapi",
                 iconName: "logos:strapi-icon",
             }
@@ -268,7 +264,7 @@ export const ProjectData = [
     <p>Built with <strong>Next.js, React, and Tailwind CSS</strong>, Mindtrack offers a <strong>fast and responsive UI</strong>. With <strong>cloud synchronization</strong>, users can securely access their data from any device.</p>
     <p>By integrating structured task management with journaling, Mindtrack provides a <strong>holistic approach</strong> to productivity and mindfulness. 🚀</p>
 </div>`,
-        projectLink: "https://www.mindtrack.com/",
+        projectLink: "",
         desc: "Organize tasks & journal thoughts for better productivity.",
         techStack: [
             { name: "Next JS", icon: "ri:nextjs-fill" },
