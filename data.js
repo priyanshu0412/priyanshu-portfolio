@@ -133,7 +133,7 @@ export const AboutMeSectionData = [
             {
                 icon: "mdi:linkedin",
                 name: "LinkedIn",
-                link: "https://www.linkedin.com"
+                link: "https://www.linkedin.com/in/priyanshu-agrawal-116222278/"
             }
         ]
     }
@@ -244,7 +244,7 @@ export const footerData = [
             {
                 icon: "mdi:linkedin",
                 platform: "LinkedIn",
-                link: "https://www.linkedin.com"
+                link: "https://www.linkedin.com/in/priyanshu-agrawal-116222278/"
             }
         ]
     }
