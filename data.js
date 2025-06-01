@@ -2,7 +2,7 @@ import { aboutMeImg, img, ProjectImgCover } from "@/assets"
 
 export const Navbar_data = [
     {
-        name: "Home"
+        name: "Home 1 "
     },
     {
         name: "About"
