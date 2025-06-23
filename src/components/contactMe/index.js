@@ -72,7 +72,7 @@ const ContactMe = () => {
 
     return (
         <div className="flex items-center justify-center w-full min-h-screen">
-            <div className="w-full py-20 max-w-[1200px] px-8 gap-y-16 flex flex-col justify-center items-center">
+            <div className="w-full pb-20 pt-40 max-w-[1200px] px-8 gap-y-16 flex flex-col justify-center items-center">
                 <Fade direction="up" triggerOnce={true} duration={1000} className="w-full">
                     <div className="flex flex-col items-center justify-center gap-y-4">
                         <p className="text-3xl font-bold tracking-wide text-transparent cursor-pointer lg:text-5xl font-poppins bg-gradient-to-r from-teal-400 to-gray-300 bg-clip-text">

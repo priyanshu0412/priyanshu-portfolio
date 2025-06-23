@@ -1,4 +1,4 @@
-import { aboutMeImg, img, ProjectImgCover } from "@/assets"
+import { aboutMeImg, defaultImg, img, mindtrackImg, ProjectImgCover } from "@/assets"
 
 export const Navbar_data = [
     {
@@ -254,7 +254,7 @@ export const footerData = [
 export const ProjectData = [
     {
         url: "/mind-track",
-        projectImg: ProjectImgCover,
+        projectImg: mindtrackImg,
         projectTitle: "Mindtrack",
         projectCategory: "Productivity & Personal Management Tool",
         projectDesc: `<div>
@@ -264,18 +264,19 @@ export const ProjectData = [
     <p style="margin-bottom: 1rem">Built with <strong>Next.js, React, and Tailwind CSS</strong>, Mindtrack offers a <strong>fast and responsive UI</strong>. With <strong>cloud synchronization</strong>, users can securely access their data from any device.</p>
     <p>By integrating structured task management with journaling, Mindtrack provides a <strong>holistic approach</strong> to productivity and mindfulness. 🚀</p>
 </div>`,
-        projectLink: "",
+        projectLink: "https://mindtrack-fe.onrender.com",
         desc: "Organize tasks & journal thoughts for better productivity.",
         techStack: [
             { name: "Next JS", icon: "ri:nextjs-fill" },
             { name: "Tailwind", icon: "mdi:tailwind" },
             { name: "MongoDB", icon: "skill-icons:mongodb" },
             { name: "Express JS", icon: "skill-icons:expressjs-light" },
+            { name: "Node JS", icon: "mdi:nodejs" },
         ],
     },
     {
         url: "/exceleur-services",
-        projectImg: ProjectImgCover,
+        projectImg: defaultImg,
         projectTitle: "Exceleur Services Website",
         projectCategory: "Software Services Website",
         projectDesc: `<div>
@@ -288,11 +289,12 @@ export const ProjectData = [
         techStack: [
             { name: "Next JS", icon: "ri:nextjs-fill" },
             { name: "Strapi", icon: "simple-icons:strapi" },
+            { name: "Tailwind CSS", icon: "catppuccin:tailwind" },
         ],
     },
     {
         url: "/proal-exceleur",
-        projectImg: ProjectImgCover,
+        projectImg: defaultImg,
         projectTitle: "ProAl",
         projectCategory: "SaaS / Recruitment CRM",
         projectDesc: `<div>
@@ -305,12 +307,14 @@ export const ProjectData = [
         techStack: [
             { name: "Node.js", icon: "mdi:nodejs" },
             { name: "Express.js", icon: "simple-icons:express" },
-            { name: "PostgreSQL", icon: "mdi:postgresql" },
+            { name: "PostgreSQL", icon: "skill-icons:postgresql-light" },
+            { name: "Angular", icon: "material-icon-theme:angular" },
+            { name: "Typescript", icon: "devicon:typescript" },
         ],
     },
     {
         url: "/sla-finserv",
-        projectImg: ProjectImgCover,
+        projectImg: defaultImg,
         projectTitle: "SLA Finserv",
         projectCategory: "Financial Services Website",
         projectDesc: `<div>
@@ -328,7 +332,7 @@ export const ProjectData = [
     },
     {
         url: "/moustache-escapes",
-        projectImg: ProjectImgCover,
+        projectImg: defaultImg,
         projectTitle: "Moustache Escapes",
         projectCategory: "Travel & Hospitality Website",
         projectDesc: `<div>
@@ -341,6 +345,7 @@ export const ProjectData = [
         techStack: [
             { name: "Next JS", icon: "ri:nextjs-fill" },
             { name: "Tailwind", icon: "mdi:tailwind" },
+            { name: "Laravel", icon: "meteor-icons:laravel" },
         ],
     },
 ];

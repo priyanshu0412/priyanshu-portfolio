@@ -8,7 +8,7 @@ import MobileNavbar from '../mobileNavbar';
 const Navbar = () => {
     return (
         <>
-            <div className='items-center justify-between hidden w-full h-20 px-16 lg:flex'>
+            <div className='items-center justify-between hidden w-full h-20 px-16 lg:flex fixed top-0 z-50 bg-white/5 backdrop-blur-md'>
                 <div>
                     <Link className='w-fit' href={'/'}>
                         <p className='text-2xl font-bold tracking-wider text-transparent cursor-pointer bg-gradient-to-r from-teal-400 to-gray-300 bg-clip-text font-poppins'>

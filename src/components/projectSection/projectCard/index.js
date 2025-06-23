@@ -9,7 +9,7 @@ const ProjectCard = ({ data }) => {
     return (
         <Fade duration={1000} direction="up" triggerOnce={true}>
             <div className="w-full lg:w-[450px] xl:w-[580px] 2xl:w-[600px] flex flex-col gap-y-6">
-                <div className="overflow-hidden transition-transform duration-300 rounded-lg hover:scale-105">
+                <div className="overflow-hidden transition-transform duration-300 rounded-lg hover:scale-105 lg:w-[400px] lg:h-[200px] xl:w-[600px] xl:h-[400px]">
                     <Image
                         src={data?.projectImg || defaultImg}
                         alt="..."

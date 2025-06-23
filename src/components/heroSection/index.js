@@ -7,7 +7,7 @@ import { HeroSectionData } from '../../../data';
 
 const HeroSection = () => {
     return (
-        <div className='flex items-center justify-center w-full py-20'>
+        <div className='flex items-center justify-center w-full py-20 lg:pt-40'>
             <Fade duration={1000} direction='up' triggerOnce={true}>
                 <div className='w-full max-w-[1200px] flex flex-col justify-center items-center gap-y-8 px-8'>
                     {HeroSectionData.length > 0 && HeroSectionData.map((ele, index) => (
@@ -26,13 +26,13 @@ const HeroSection = () => {
                         </div>
                     ))}
                     <div className='flex items-center w-full gap-x-2 justify-evenly lg:justify-center lg:gap-x-8'>
-                        <a
+                        {/* <a
                             href='/PriyanshuResume.pdf'
                             download='/PriyanshuResume.pdf'
                             className='w-fit text-[#000] bg-[#b2b3b3] p-3 lg:px-6 lg:py-3 rounded-full hover:bg-[#ffffffc0]'
                         >
                             Download Resume
-                        </a>
+                        </a> */}
                         <Link className='w-fit' href={'/contact'}>
                             <button className='border-2 hover:text-white hover:border-white border-[#b2b3b3] text-[#b2b3b3] p-3 lg:px-6 lg:py-3 rounded-full'>
                                 Contact

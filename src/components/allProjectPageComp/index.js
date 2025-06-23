@@ -9,7 +9,7 @@ const AllProjectPageComp = () => {
     return (
         <div className="flex items-center justify-center w-full py-20" id="Project">
             <Fade direction="up" triggerOnce={true} duration={1000}>
-                <div className="max-w-[1400px] px-8 flex flex-col justify-center items-center gap-y-12 w-full">
+                <div className="max-w-[1400px] px-8 flex flex-col justify-center items-center gap-y-12 w-full pt-16">
                     <div className="flex flex-col items-center justify-center w-full lg:w-[50%] gap-y-6">
                         <p className="text-3xl font-bold tracking-wide text-white lg:text-5xl font-poppins">
                             Latest Projects
@@ -28,7 +28,7 @@ const AllProjectPageComp = () => {
                     </div>
                 </div>
             </Fade>
-           
+
         </div>
     );
 };
