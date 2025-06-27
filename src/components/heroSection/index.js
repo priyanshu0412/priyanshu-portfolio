@@ -1,7 +1,9 @@
+"use client"
 import Link from 'next/link';
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { HeroSectionData } from '../../../data';
+import { ShinyTextButton } from 'react-bits';
 
 // ---------------------------------------------------
 
@@ -34,9 +36,21 @@ const HeroSection = () => {
                             Download Resume
                         </a> */}
                         <Link className='w-fit' href={'/contact'}>
-                            <button className='border-2 hover:text-white hover:border-white border-[#b2b3b3] text-[#b2b3b3] p-3 lg:px-6 lg:py-3 rounded-full'>
-                                Contact
-                            </button>
+                            <Link href="/contact" className="w-fit">
+                                <ShinyTextButton
+                                    text="Contact"
+                                    shineColor="#ffffff"
+                                    fontSize="1rem"
+                                    fontWeight="600"
+                                    borderRadius="9999px" // Fully rounded like `rounded-full`
+                                    padding="0.75rem 1.5rem" // Same as `p-3 lg:px-6 lg:py-3`
+                                    backgroundColor="transparent"
+                                    border="2px solid #b2b3b3"
+                                    color="#b2b3b3"
+                                    hoverColor="#ffffff"
+                                    hoverBorder="2px solid #ffffff"
+                                />
+                            </Link>
                         </Link>
                     </div>
                 </div>

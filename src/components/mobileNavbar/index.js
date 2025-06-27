@@ -32,7 +32,7 @@ const MobileNavbar = () => {
 
     return (
         <>
-            <div className='flex items-center justify-between h-16 p-4 lg:hidden'>
+            <div className='flex items-center justify-between h-16 p-4 lg:hidden sticky top-0 z-50 bg-white/5 backdrop-blur-md'>
                 <div>
                     <Link className='w-fit' href={'/'}>
                         <p className='text-2xl font-bold tracking-wider text-transparent cursor-pointer bg-gradient-to-r from-teal-400 to-gray-300 bg-clip-text font-poppins'>

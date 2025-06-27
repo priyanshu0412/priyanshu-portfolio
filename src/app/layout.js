@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full h-screen animate-moveShadow">
+      <body className="w-full animate-moveShadow">
         <Navbar />
         {children}
         <Footer />
