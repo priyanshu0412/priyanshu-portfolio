@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { HeroSectionData } from '../../../data';
-import { ShinyTextButton } from 'react-bits';
 
 // ---------------------------------------------------
 
